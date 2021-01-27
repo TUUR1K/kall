@@ -38,5 +38,6 @@ int main()
 
 	window.display();		//буфер отображается на экране
 	_getch();			//ожидание нажатия клавиши в текстовом окне
+	std::cout << "Sanya, primi";
 	return 0;
 }
