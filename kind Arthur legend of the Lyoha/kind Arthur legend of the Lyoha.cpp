@@ -2,10 +2,11 @@
 #include <iostream> 				// для cin
 #include <conio.h> 				// для _getch
 #include <windows.h>				// для SetConsoleCP()
-
+#include <locale>
 int main()
 {
 	int CircleR;
+	setlocale(LC_ALL, "Russian");
 	SetConsoleCP(1251);			// разрешить русский текст в потоке ввода
 	SetConsoleOutputCP(1251);		// разрешить русский текст в потоке вывода
 	puts("Введите радиус круга в пикселях (1-100):");
@@ -38,6 +39,6 @@ int main()
 
 	window.display();		//буфер отображается на экране
 	_getch();			//ожидание нажатия клавиши в текстовом окне
-	std::cout << "Sanya, primi pzh";
+	std::cout << "Все работает, причем сейчас оно должно мержиться без проблем тк я лишь добавил код, но не изменял старый";
 	return 0;
 }
